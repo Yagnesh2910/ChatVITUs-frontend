@@ -17,7 +17,8 @@ function History() {
     
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:4000/chats/getChatHistory/${user_id}`);
+      // const response = await fetch(`http://localhost:4000/chats/getChatHistory/${user_id}`);
+      const response = await fetch(`https://chatvitus-backend.onrender.com/chats/getChatHistory/${user_id}`);
       const data = await response.json();
 
       if (response.ok) {
@@ -40,7 +41,8 @@ function History() {
     if (!user_id) return;
 
     try {
-      const response = await fetch(`http://localhost:4000/chats/clearChatHistory/${user_id}`, {
+      // const response = await fetch(`http://localhost:4000/chats/clearChatHistory/${user_id}`, {
+      const response = await fetch(`https://chatvitus-backend.onrender.com/chats/clearChatHistory/${user_id}`, {
         method: "POST",
       });
 
