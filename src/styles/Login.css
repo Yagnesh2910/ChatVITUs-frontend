@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    /* background-color: #0d1b2a; */
+    background-color: #1b263b;
+    /* background-color: #ade8f4; */
+    height: 100vh;
+    color: #e0e1dd;
+    font-family: "Poppins", serif;
+}
+
+.card{
+    width: 40vw;
+    height: 60vh;
+    /* background-color: #1b263b; */
+    background-color: #0d1b2a;
+    /* background-color: #023e8a; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 1.25rem 1.25rem 625rem #0d1b2a;
+    /* border: 5px solid black; */
+}
+
+.title{
+    margin: 3vh 0 0 0;
+    font-size: xx-large;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.title span{
+    color: #415a77;
+    /* color: #48cae4; */
+    font-size: larger;
+    font-weight: 700;
+}
+
+.credentials{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: green; */
+    justify-content: center;
+    margin: 3vh 0 0 0;
+}
+
+input{
+    height: 5vh;
+    width: 91%;
+    border: none;
+    margin: 5px 0;
+    padding: 5px 5px 5px 20px;
+    border-radius: 25px;
+    background-color: #0d1b2a;
+    border: 2px solid #415a77;
+    color: #e0e1dd;
+}
+
+.submit input{
+    width: 100%;
+    background-color: #415a77;
+    /* background-color: #778da9; */
+    /* background-color: #0096c7; */
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    border: none;
+}
+
+.submit input:hover{
+    background-color: #778da9;
+    /* background-color: #415a77; */
+    /* background-color: #48cae4; */
+    cursor: pointer;
+    transition-duration: 500ms;
+    color: #0d1b2a;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 3vh 0 1vh 0;
+}
+
+#hyper-link{
+    text-decoration: none;
+    color: #e0e1dd;
+}
+
+.hyper-link:hover{
+    font-size: larger;
+    transition: 500ms;
+}
+
+.google-login{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 6vh;
+    /* background-color: blue; */
+    border: 2px solid #415a77;
+    border-radius: 17px;
+    margin: 2vh 0 0 0;
+}
+
+.google-login:hover{
+    cursor: pointer;
+    background-color: #415a7738;
+    transition-duration: 500ms;
+}
+
+.google-icon img{
+    width: 3vh;
+    margin: 9px 5px 0 0;
+    /* background-color: green; */
+}
+
+.google-login .text{
+    margin: 7px 0 0 5px
+}

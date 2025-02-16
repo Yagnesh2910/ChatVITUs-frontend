@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.history-container{
+    /* background-color: #dfdfdf; */
+    background-color: #1b263b;
+    height: 90vh;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.history-chat-area{
+    width: 80%;
+    height: 80%;
+    margin: 1vh 0 0 0;
+    border-radius: 0.938rem;
+    padding: 0.625rem;
+    /* box-shadow: 1px 1px 15px #3c4f76; */
+    box-shadow: 0.625rem 0.625rem 62.5rem #0d1b2a;
+    background-color: #0d1b2a;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.history-chat-area::-webkit-scrollbar {
+    display: none;
+}
+
+.message{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    min-width: 10%;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+.message.user{
+    background-color: #778da9;
+    text-align: left;
+    align-self: flex-end;
+    color: #0d1b2a;
+    font-family: "Poppins", serif;
+    /* font-size: medium; */
+    font-weight: 300;
+    font-style: normal;
+}
+
+.message.bot{
+    background-color: #e0e1dd;
+    text-align: left;
+    align-self: flex-start;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#history-text{
+    color: #e0e1dd;
+    font-family: "Poppins", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: x-large;
+    margin: auto;
+}
+
+.clear-history img{
+    filter: invert();
+    width: 5vh;
+    margin: 0 0 2vh 0;
+}
+
+.clear-history:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    .history-container{
+        height: 85.4vh;
+    }
+
+    .history-chat-area {
+        width: 80%;
+        height: 70%;
+    }
+
+    .message {
+        max-width: 85%;
+        font-size: smaller;
+    }
+
+    .message.user{
+        font-weight: 0;
+        font-size: smaller;
+    }
+}
