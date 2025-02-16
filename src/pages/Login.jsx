@@ -14,7 +14,8 @@ function Login() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try{
-            const result = await axios.post('http://localhost:4000/users/verify', {email, password});
+            // const result = await axios.post('http://localhost:4000/users/verify', {email, password});
+            const result = await axios.post('https://chatvitus-backend.onrender.com/users/verify', {email, password});
             console.log(result);
             if(result.data.msg === "Success"){
                 localStorage.setItem("user_id", result.data.user._id);
@@ -34,7 +35,8 @@ function Login() {
             const user = result.user;
             console.log(user);
 
-            const res = await axios.post('http://localhost:4000/users/googlelogin',{
+            // const res = await axios.post('http://localhost:4000/users/googlelogin',{
+            const res = await axios.post('https://chatvitus-backend.onrender.com/users/googlelogin',{
                 email: user.email,
                 name: user.displayName
             });
