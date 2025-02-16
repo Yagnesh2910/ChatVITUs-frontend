@@ -14,7 +14,8 @@ function SignUp() {
 
     const handleSubmit = (event) => {
         let inputObj = {name, email, password};
-        let url = 'http://localhost:4000/users/adduser';
+        // let url = 'http://localhost:4000/users/adduser';
+        let url = 'https://chatvitus-backend.onrender.com/users/adduser';
 
         try{
             axios
