@@ -25,7 +25,8 @@ function Home() {
 
     try{
       // const response = await axios.post('http://172.16.33.167:5000/ask',{
-      const response = await axios.post('http://localhost:5000/ask',{
+      // const response = await axios.post('http://localhost:5000/ask',{
+      const response = await axios.post('https://chatvitus-app.onrender.com/ask',{
         user_id: user_id,  
         query:userQuery,
         // messages: [{ sender: "user", text: userQuery }],
